@@ -6,14 +6,14 @@ const About = () => {
         <div className="bg-gray-100 min-h-screen">
           <div className="py-8 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-              <div className="lg:text-center">
-                <h2 className="text-base text-indigo-600 underline font-semibold tracking-wide uppercase">
+              <div className="">
+                <h2 className="text-base text-indigo-600 underline font-semibold uppercase">
                   About Us
                 </h2>
                 <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                   Delivering Delightful Food Experiences
                 </p>
-                <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                <p className="mt-4  text-xl text-gray-500 ">
                   At Foodie's Delight, we are passionate about bringing the best
                   food to your doorstep. We take pride in serving delicious dishes
                   made from fresh, locally-sourced ingredients.
@@ -22,14 +22,8 @@ const About = () => {
     
               <div className="mt-10">
                 <div className="md:flex md:justify-center">
-                  <div className="md:flex-shrink-0">
-                    <img
-                      className="h-48 w-full object-cover md:w-72 rounded-lg"
-                      src={logo}
-                      alt="Foodie's Delight"
-                    />
-                  </div>
-                  <div className="mt-4 md:mt-0 md:ml-6">
+                  
+                  <div className="mt-4 md:mt-0">
                     <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase underline">
                       Our Mission
                     </h2>
@@ -49,8 +43,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-    
   )
 }
 

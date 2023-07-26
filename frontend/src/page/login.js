@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginRedux } from "../redux/userSlice";
-import { IoIosLogIn } from "react-icons/io";
+// import { IoIosLogIn } from "react-icons/io";
 
 import axios from "axios";
 const Login = () => {
@@ -25,24 +25,21 @@ const Login = () => {
     const checkUserLoginStatus = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/checkLoginStatus"
+          "/checkLoginStatus"
         );
         if (response.data) {
-          // If the response contains user data, update the Redux state
           dispatch(loginRedux(response.data));
         }
       } catch (err) {
-        // Handle error or redirect to login if token is not valid
+        console.log(err);
       }
     };
 
     checkUserLoginStatus();
   }, []);
-
   const handleShowPassword = () => {
     setShowPassword((preve) => !preve);
   };
-
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setData((preve) => {
@@ -52,7 +49,6 @@ const Login = () => {
       };
     });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -60,7 +56,7 @@ const Login = () => {
         email,
         password,
       });
-      alert("Login Successful");
+      toast("Login Successful");
       setData({
         email: email,
         password: password,
@@ -68,7 +64,7 @@ const Login = () => {
       dispatch(loginRedux(userInfo));
       navigate("/");
     } catch (err) {
-      alert("Invalid login credentials");
+      toast("Invalid login credentials");
     }
   };
 
@@ -115,8 +111,8 @@ const Login = () => {
         </form>
         <p className="text-left text-sm mt-2 ">
           Don't have account ?{" "}
-          <Link to={"/signup"} className="text-red-500 text-2xl">
-            <IoIosLogIn />
+          <Link to={"/signup"} className="text-red-500 underline">
+            Sign Up
           </Link>
         </p>
       </div>

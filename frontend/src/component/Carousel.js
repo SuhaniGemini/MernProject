@@ -4,7 +4,6 @@ import food from "../assest/food.webp";
 import imagec from "../assest/imagec.avif"
 import imagec2 from "../assest/imagec2.avif"
 import imagec4 from "../assest/image1.avif"
-// import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
 function Carousels() {
   return (

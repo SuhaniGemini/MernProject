@@ -43,17 +43,17 @@ const AllProduct = ({ heading }) => {
   return (
     <div className="my-5">
       <h2 className="font-bold text-2xl text-slate-800 mb-4 flex gap-4 justify-center overflow-scroll scrollbar-none">{heading}</h2>
-          <div className="relative">
+          <div className="relative flex justify-center">
         <input
           type="text"
           placeholder="Search..."
-          className="px-4 py-2 border rounded-md mb-4 pl-10 text-gray-600"
+          className="px-4 py-2 border rounded-md mb-4 pl-10 text-gray-600 w-[50%]"
           value={searchInput}
           onChange={(e) => handleSearchInput(e.target.value)}
           ref={inputRef} // Set the ref for the input field
         />
         <AiOutlineSearch
-          className="text-base absolute top-[28%] left-[12.6rem] transform translate-y-[-35%] text-grey-500 b cursor-pointer font-bold border-blue-300"
+          className="text-base absolute top-[28%] left-[73%] transform translate-y-[-35%] text-grey-500 b cursor-pointer font-bold border-blue-300"
           onClick={handleSearchIconClick} // Call the function when the icon is clicked
         />
       </div>
