@@ -2,7 +2,7 @@ import React from "react";
 import { TbPlus, TbMinus } from "react-icons/tb";
 import { AiFillDelete } from "react-icons/ai";
 import axios from "axios";
-
+import { toast } from "react-hot-toast";
 const CartProduct = ({ id, name, image, category, qty, total, price }) => {
   const deleteCartProduct = async () => {
     try {
@@ -23,6 +23,10 @@ const CartProduct = ({ id, name, image, category, qty, total, price }) => {
   };
 
   const decreaseQuantity = async () => {
+      if(qty === 0 ){
+      toast ("Quantity Cannot be negative");
+      return;
+    }
     try {
       await axios.put("/cartdec/" + id);
     } catch (err) {
