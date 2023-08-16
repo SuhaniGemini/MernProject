@@ -14,7 +14,7 @@ const CardFeature = ({
   loading,
   id,
 }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const userData = useSelector((state) => state.user);
   const navigate = useNavigate();
   const handleAddCartProduct = async (e) => {
@@ -35,16 +35,16 @@ const CardFeature = ({
       console.log(err);
     }
     window.location.reload();
-    dispatch(
-      addCartItem({
-        _id: id,
-        name: name,
-        price: price,
-        category: category,
-        dietary: dietary,
-        image: image,
-      })
-    );
+    // dispatch(
+    //   // addCartItem({
+    //   //   _id: id,
+    //   //   name: name,
+    //   //   price: price,
+    //   //   category: category,
+    //   //   dietary: dietary,
+    //   //   image: image,
+    //   // })
+    // );
   };
   return (
     <div className="w-full min-w-[200px] max-w-[200px] bg-white hover:shadow-lg drop-shadow-lg py-5 px-4 cursor-pointer flex flex-col ">

@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../assest/Name.png";
 
 const About = () => {
   return (
@@ -19,7 +18,7 @@ const About = () => {
                   made from fresh, locally-sourced ingredients.
                 </p>
               </div>
-    
+
               <div className="mt-10">
                 <div className="md:flex md:justify-center">
                   

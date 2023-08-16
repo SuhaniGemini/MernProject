@@ -23,7 +23,7 @@ const CartProduct = ({ id, name, image, category, qty, total, price }) => {
   };
 
   const decreaseQuantity = async () => {
-      if(qty === 0 ){
+    if(qty === 0 ){
       toast ("Quantity Cannot be negative");
       return;
     }
