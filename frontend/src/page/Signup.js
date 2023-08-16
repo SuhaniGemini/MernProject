@@ -48,7 +48,7 @@ function Signup() {
     setData((prev) => ({
       ...prev,
       [name]: value,
-    }));
+    }));    
   };
 
   const isImageFile = (file) => {

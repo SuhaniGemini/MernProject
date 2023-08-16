@@ -11,4 +11,4 @@ async function ImagetoBase64(file){
     return data
 }
 
-export {ImagetoBase64}
+export {ImagetoBase64}   

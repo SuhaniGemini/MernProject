@@ -1,0 +1,97 @@
+.custom-container {
+  padding: 0.75rem;
+}
+@media (min-width: 768px) {
+  .custom-container {
+    padding: 1rem;
+  }
+}
+
+.custom-card {
+  width: 100%;
+  max-width: 25rem;
+  background-color: white;
+  margin: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+.custom-card .custom-title {
+  text-align: center;
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+.custom-card .custom-image-container {
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.custom-card .custom-image-container .custom-image {
+  width: 100%;
+}
+.custom-card .custom-form {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.custom-card .custom-form label {
+  display: block;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.custom-card .custom-form .custom-input {
+  width: 100%;
+  background-color: #d2d6dc;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+.custom-card .custom-form .custom-input:focus-within {
+  outline: 2px solid #60a5fa;
+}
+.custom-card .custom-form .custom-password-input {
+  display: flex;
+  background-color: #E8f0fe;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+}
+.custom-card .custom-form .custom-password-input .custom-input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.custom-card .custom-form .custom-password-input .custom-password-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.custom-card .custom-form .custom-button {
+  width: 100%;
+  max-width: 150px;
+  margin: auto;
+  background-color: #f87171;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.custom-card .custom-form .custom-button:hover {
+  background-color: #f64040;
+}
+.custom-card .custom-signup-text {
+  text-align: left;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.custom-card .custom-signup-text .custom-signup-link {
+  color: #f87171;
+  text-decoration: underline;
+}/*# sourceMappingURL=login.css.map */

@@ -7,7 +7,7 @@ export default function Protected(props) {
     const userData = useSelector((state) => state.user);
     useEffect(()=>{
      console.log(name);
-        if(name=== "NewProduct" && userData.email !== "pachourisuhani@gmail.com"){
+        if(name === "NewProduct" && userData.email !== "pachourisuhani@gmail.com"){
             navigate('/login') 
         }
         else if(userData.email === ""){
@@ -18,3 +18,4 @@ export default function Protected(props) {
     <div><Component/></div>
   )
 }
+ 
